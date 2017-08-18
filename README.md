@@ -8,7 +8,7 @@ Pretty simple really:
 
   - `git clone https://github.com/Stono/gscout`
   - `cd gscout`
-	- `docker-compose run gscout "your-project-here"
+	- `docker-compose run gscout your-project-here`
 
 ### Authentication
 gscout requires a service account with the `roles/viewer` and `roles/iam.securityReviewer` to run.  This script will authenticate the gcloud CLI using some command line prompts, generate that servic eaccount and generate a service key for gscout to use.  Once the scan is complete, the account is deleted.
