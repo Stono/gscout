@@ -11,7 +11,7 @@ Pretty simple really:
  - `docker-compose run gscout your-project-here`
 
 ### Authentication
-gscout requires a service account with the `roles/viewer` and `roles/iam.securityReviewer` to run.  This script will authenticate the gcloud CLI using some command line prompts, generate that servic eaccount and generate a service key for gscout to use.  Once the scan is complete, the account is deleted.
+gscout requires a service account with the `roles/viewer` and `roles/iam.securityReviewer` to run.  This script will authenticate the gcloud CLI using some command line prompts, generate that service eaccount and generate a service key for gscout to use.  Once the scan is complete, the account is deleted.
 
 **NOTE**: As there is a volume mount in `docker-compose.override.yml` which mounts the home directory of the container user - you'll only need to authenticate the gcloud cli once. 
 
